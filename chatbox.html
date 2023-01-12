@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+          .message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+      
+          .remove-button {
+            float: right;
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+          }
+      
+          #chat-history {
+            height: 300px;
+            overflow-y: auto;
+          }
+        </style>
+      </head>
+
+      <body>
+        <form id="chatbot-form">
+          <label>Enter a message:</label>
+          <input type="text" id="chatbot-input">
+          <button type="submit">Submit</button>
+        </form>
+        <div id="chatbot-response"></div>
+      
+        <script src="./index.js"></script>
+      
+        <div id="chat-history"></div>
+      
+      </body>
+</html>
