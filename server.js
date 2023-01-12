@@ -1,8 +1,11 @@
+import fetch from "node-fetch";
 const express = require('express');
 const bodyParser = require('body-parser');
 const { dirname } = require('path');
 
 const app = express();
+const fetch = require('node-fetch');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
