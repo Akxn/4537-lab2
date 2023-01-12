@@ -4,8 +4,8 @@ $(document).ready(function () {
       const message = $('#chatbot-input').val();
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:3000/chatbot',
-        // url: 'https://greenmonkey.onrender.com',
+        // url: 'http://localhost:3000/chatbot',
+        url: 'https://greenmonkey.onrender.com/chatbot',
         data: { message: message },
         success: function (response) {
           let newMessage = $('<div>', { class: 'message' }).text(response.text);
