@@ -4,7 +4,9 @@ const { dirname } = require('path');
 
 const app = express();
 const fetch = require('node-fetch');
+var cors = require('cors')
 
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
